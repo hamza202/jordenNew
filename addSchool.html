@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
+    <title> نموذج اضافة مدرسة </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/space.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+</head>
+<body dir="rtl">
+	
+	<!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+	<div class="socialRightSide">
+	<div class="socialRightSideItem"><a href="#"><i class="fa fa-facebook fa-2x"></i></a></div>
+	<div class="socialRightSideItem"><a href="#"><i class="fa fa-twitter fa-2x"></i></a></div>
+	</div>
+	
+	<div class="uk-offcanvas-content internalPage">
+    <div class="posr">
+        <!--Start section header-->
+        <section class="header">
+
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col-md-1 col-sm-1 col-xs-1 pull-right">
+                                <div class="menu pull-right">
+                                    <button class="menu-btn pull-right" type="button" uk-toggle="target: #offcanvas-flip"><i
+                                            class="fa fa-bars" aria-hidden="true"></i>
+                                    </button>
+
+                                    <div id="offcanvas-flip" uk-offcanvas="mode: reveal; overlay: true">
+                                        <div class="uk-offcanvas-bar">
+
+                                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                            <h3 class="pt-50 color-333">بحث</h3>
+
+                                            <div class="posr mt-10">
+                                                <div id="header-search" class="skip-content">
+                                                    <form id="search-form" action="#" method="get">
+                                                        <div class="form_search">
+                                                            <label for="search">Search:</label>
+                                                            <input id="search" type="text" name="q" value="" class="input-text"
+                                                                   maxlength="128" autocomplete="off">
+                                                            <button type="submit" title="Search"
+                                                                    class="button button-search fa fa-search"></button>
+                                                            <input type="submit" title="Search" class="hidden">
+                                                            <div id="search_autocomplete" class="search-autocomplete"
+                                                                 style="display: none;"></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <hr class="mt-30">
+											<ul class="list-unstyled ul-menu">
+												<li><a class="active" href="index.html"><span uk-icon="icon:  home"></span> الرئيسية</a></li>
+												<li><a href="filter.html"><span uk-icon="icon:  list"></span> تصفح التقييمات</a></li>
+												<li><a href="addSchool.html"><span class="fa fa-university"></span> اضافة مدرسة</a></li>
+												<li><a href="notFound.html"><span class="fa fa-television"></span> كيف يعمل نظام التقييم</a></li>
+											</ul>
+											<ul class="list-unstyled ul-menu2 mt-30 pr-30">
+												<li><a href="aboutUs.html">عن الموقع</a></li>
+												<li><a href="notFound.html">اعلن معنا</a></li>
+												<li><a href="contactUs.html">اتصل بنا</a></li>
+											</ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-7 col-sm-4 col-xs-4"></div>
+                            <div class="col-md-4 col-sm-7 col-xs-7 pull-left">
+                                <img class="img-responsive pull-left" src="images/logo.png">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+				<div class="container"><h1 class="internalPageTitle"> اتصل بنا </h1></div>
+            </div>
+        </section>
+        <!--End section header-->
+        <!--posr-->
+        
+    </div>
+		
+		
+		
+		<div class="slide-serch">
+            <div class="container">
+            <div class="row">
+				
+                <div class="col-sm-10 col-xs-8">
+                    <div class="posr">
+                        <div id="slide-search" class="skip-content">
+                            <form id="slide-form" action="#" method="get">
+                                <div class="form_search">
+                                    <label for="search">Search:</label>
+                                    <input id="search-1" type="text" name="q" placeholder="بحث" value=""
+                                           class="input-text" maxlength="128" autocomplete="off">
+                                    <button type="submit" title="Search"
+                                            class="button button-search fa fa-search"></button>
+                                    <input type="submit" title="Search" class="hidden">
+                                    <div id="search_auto" class="search-autocomplete" style="display: none;"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 col-xs-4">
+                    <div class="browse">
+                        <a class="c-purple browse-btn text-center" href="#"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                            تصفح</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+		
+		<div class="container">
+		الرئيسية  /  نموذج اضافة مدرسة  
+		<div class="internalPage-body">
+			
+<h2>نموذج اضافة مدرسة	  </h2>
+		
+			<hr>
+
+<div class="row">
+	
+	
+	
+		<div class="col-md-6 mobile-block">
+		<div class="" style="    line-height: 2;">
+		اردت تعديل معلومات مدرسة؟
+	<br>
+<a href="#">  <i class="fa fa-edit"></i>  تعديل معلومات المدرسة</a>
+	</div>
+		<div class="mt-15 mb-30">
+		شكرا لوقتك في اضافة بيانات مدرسة جديدة، لغايات اضافة معلومات اضافية والتأكد من كامل التفاصيل سيتم ارسال نتيجة هذا النموذج الى مشرف الموقع ومن ثم سيتم نشرها على الموقع 
+		</div>
+	</div>
+	<div class="col-md-6">
+<form class="newFormStyle">
+	
+
+	  <div class="form-group mt-10">
+    <label for="exampleInputPassword1"> اسم المدرسة<span class="text-danger">*</span> : </label>
+    <input type="password" class="form-control">
+  </div>
+	
+  <div class="form-group mt-30">
+    <label for="exampleInputEmail1"> <i class="fa fa-fw fa-building"></i>  المدينة<span class="text-danger">*</span> :</label>
+    <select class="form-control">
+	  <option> أختر المدينة من القائمة </option>
+	  <option> عمان </option>
+	  <option> عمان </option>
+	  <option> عمان </option>
+	  <option> عمان </option>
+	</select>
+  </div>
+	
+  <div class="form-group mt-30">
+	<label for="exampleInputEmail1"> <i class="fa fa-tags fa-fw"></i> التصنيفات :</label>
+	  <div class="pr-15 pl-15 checkbox-box">
+	<div class="row">
+	
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> حكومية
+			</label>
+		  </div>
+		<hr class="m-0">	
+		</div>
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> خاصة نظام IB
+			</label>
+		  </div>
+		<hr class="m-0">	
+		</div>
+	
+	</div>
+	<div class="row">
+		
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> خاصة
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> مختلط صفوف اولى	
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+	
+	</div>
+	<div class="row">
+		
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> وكالة غوث
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> اساسي
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+	
+	</div>
+	<div class="row">
+		
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> مركز صعوبة التعلم
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> ثانوي
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+	
+	</div>
+	<div class="row">
+		
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox">   خاصة نظام IGCSE
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> ذكور
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+	
+	</div>
+	<div class="row">
+		
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox">   خاصة نظام SAT
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox"> اناث
+			</label>
+		  </div>
+			<hr class="m-0">	
+		</div>
+	
+	</div>
+	<div class="row">
+		
+		<div class="col-md-6">
+		  <div class="checkbox">
+			<label>
+			  <input type="checkbox">   خاصة نظام محلي
+			</label>
+		  </div>
+			
+		</div>
+		<div class="col-md-6"></div>
+	
+	</div>
+	</div>	
+	</div>	
+	
+  <div class="form-group mt-30">
+    <label for="exampleInputPassword1"> <i class="fa fa-fw fa-map-marker"></i>  موقع المدرسة : <span class="infoInput"><span id="display_count">0</span>/<span id="word_left">20</span> كلمة كحد اقصى </span></label>
+    <textarea class="form-control" rows="5" id="school-map"></textarea>
+  </div>
+	
+  <div class="form-group mt-30">
+	  
+    <label for="exampleInputPassword1"> <i class="fa fa-fw fa-phone"></i> معلومات الاتصال بالمدرسة : <span class="infoInput"> مثال: هاتف: 06-55448833 ، فاكس: 06-55448833</span></label>
+    <textarea class="form-control" rows="5"></textarea>
+  </div>
+	
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> اوافق على جميع <a href="#"> الشروط والاحكام</a> <span class="text-danger">* </span>
+    </label>
+  </div>
+	<button type="submit" class="btn btn-default mt-30"> <i class="fa fa-send fa-fw"></i> ارسال </button>
+</form>		
+	</div>	
+	<div class="col-md-6 mobile-none">
+		<div class="mt-30" style="    line-height: 2;">
+		اردت تعديل معلومات مدرسة؟
+	<br>
+<a href="#">  <i class="fa fa-edit"></i>  تعديل معلومات المدرسة</a>
+	</div>
+		<div class="mt-50">
+		شكرا لوقتك في اضافة بيانات مدرسة جديدة، لغايات اضافة معلومات اضافية والتأكد من كامل التفاصيل سيتم ارسال نتيجة هذا النموذج الى مشرف الموقع ومن ثم سيتم نشرها على الموقع 
+		</div>
+	</div>
+	<div class="col-md-8">
+			<div class="messageFormSend mt-40 mb-40">
+		<div class="row">
+			<div class="col-xs-3">
+			<img src="images/addSacSac.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-xs-9">
+				<h3>تم الارسال بنجاح</h3>
+				<p>
+			شكرا لوقتك في اضافة بيانات مدرسة جديدة، لغايات اضافة معلومات اضافية والتأكد من كامل التفاصيل سيتم ارسال نتيجة هذا النموذج الى مشرف الموقع ومن ثم سيتم نشرها على الموقع 
+					</p>
+				<a href="#"> <i class="fa fa-angle-right"></i>  عودة للصفحة السابقة </a><br>
+				<a href="#"> <i class="fa fa-home"></i> الصفحة الرئيسية للموقع </a>
+			</div>
+			</div>
+		</div>
+			<div class="messageFormSend mt-40 mb-40">
+		<div class="row">
+			<div class="col-xs-3">
+			<img src="images/addSacErr.jpg" class="img-responsive" alt="">
+			</div>
+			<div class="col-xs-9">
+				<h3>حدث خطأ ما</h3>
+				<p><a href="#"><i class="fa fa-fw fa-rotate-left"></i> اعد الارسال </a></p>
+				<a href="#"> <i class="fa fa-angle-right"></i>  عودة للصفحة السابقة </a><br>
+				<a href="#"> <i class="fa fa-home"></i> الصفحة الرئيسية للموقع </a>
+			</div>
+			</div>
+		</div>
+	</div>
+	</div>			
+			
+		</div>
+		</div>
+		<footer>
+	
+	<div class="footer-bottom">
+	<div class="container">
+	<div class="row">
+		
+		<div class="col-md-4 text-center">
+		<img src="images/logo-png.png" width="200" alt="">
+		<h2>اول موقع اردني لتقييم المدارس</h2>
+		<p>جميع الحقوق محفوظة © 2017 </p>
+		<span>تابعنا</span>
+		<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+		<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+		
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-sm-4 col-md-2">
+			
+
+
+
+			<h3>من نحن</h3>
+			<ul class="list-unstyled">
+			<li><a href="#">عن الموقع</a></li>
+			<li><a href="#">اعلن معنا</a></li>
+			<li><a href="#">اتصل بنا</a></li>
+			</ul>
+			
+		</div>
+		<div class="col-sm-4 col-md-2">
+			
+			<h3>الارشادات القانونية </h3>
+			<ul class="list-unstyled">
+			<li><a href="#">سياسة الخصوصية </a></li>
+			<li><a href="#">شروط الخدمة </a></li>
+			<li><a href="#">سياسة المحتوى </a></li>
+			</ul>
+			
+
+
+
+		</div>
+		<div class="col-sm-4 col-md-2">
+			
+			<h3>الدعم الفني </h3>
+			<ul class="list-unstyled">
+			<li><a href="#">أسئلة متكررة</a></li>			
+				<li><a href="#">شروط الخدمة</a></li>			
+				<li><a href="#">كيف تشارك</a></li>
+			</ul>
+			
+		</div>
+		</div>	
+	</div>
+	</div>
+	
+</footer>
+	</div>	
+		
+
+
+
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script src="js/readmore.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

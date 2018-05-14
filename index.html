@@ -1,0 +1,1143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	
+    <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="images/favicon-32x32.png" sizes="32x32">
+
+    <title>jordan</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/uikit-rtl.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="css/space.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!--font-->
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/droid-arabic-kufi" type="text/css"/>
+</head>
+<body dir="rtl">
+	
+	<!-- Preloader -->
+<!--<div id="preloader">-->
+  <!--<div id="status">&nbsp;</div>-->
+<!--</div>-->
+
+<div class="uk-offcanvas-content">
+    <div class="posr">
+        <!--Start section header-->
+        <section class="header">
+
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <div class="container">
+                        <div class="row">
+                            <div class=" col-md-1 col-sm-1 col-xs-1 pull-right">
+                                <div class="menu pull-right">
+                                    <button class="menu-btn pull-right" type="button" uk-toggle="target: #offcanvas-flip"><i
+                                            class="fa fa-bars" aria-hidden="true"></i>
+                                    </button>
+
+                                    <div id="offcanvas-flip" uk-offcanvas="mode: reveal; overlay: true">
+                                        <div class="uk-offcanvas-bar">
+
+                                            <button class="uk-offcanvas-close" type="button" uk-close></button>
+
+                                            <h3 class="pt-50 color-333">بحث</h3>
+
+                                            <div class="posr mt-10">
+                                                <div id="header-search" class="skip-content">
+                                                    <form id="search-form" action="#" method="get">
+                                                        <div class="form_search">
+                                                            <label for="search">Search:</label>
+                                                            <input id="search" type="text" name="q" value="" class="input-text"
+                                                                   maxlength="128" autocomplete="off">
+                                                            <button type="submit" title="Search"
+                                                                    class="button button-search fa fa-search"></button>
+                                                            <input type="submit" title="Search" class="hidden">
+                                                            <div id="search_autocomplete" class="search-autocomplete"
+                                                                 style="display: none;"></div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <hr class="mt-30">
+                                            <ul class="list-unstyled ul-menu">
+                                                <li><a class="active" href="index.html"><span uk-icon="icon:  home"></span> الرئيسية</a></li>
+                                                <li><a href="filter.html"><span uk-icon="icon:  list"></span> تصفح التقييمات</a></li>
+                                                <li><a href="addSchool.html"><span class="fa fa-university"></span> اضافة مدرسة</a></li>
+                                                <li><a href="notFound.html"><span class="fa fa-television"></span> كيف يعمل نظام التقييم</a></li>
+                                            </ul>
+                                            <ul class="list-unstyled ul-menu2 mt-30 pr-30">
+                                                <li><a href="aboutUs.html">عن الموقع</a></li>
+                                                <li><a href="notFound.html">اعلن معنا</a></li>
+                                                <li><a href="contactUs.html">اتصل بنا</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" col-md-7 col-sm-4 col-xs-4">
+                            </div>
+                            <div class="col-md-4 col-sm-7 col-xs-7 pull-left">
+                                <img class="img-responsive pull-left" src="images/logo.png">
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+        <!--End section header-->
+        <!--posr-->
+        <div class="slide-title">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 hidden-xs"><h2 class="color-fff">اكتب، اقترح، علّق برأيك عن المدرسة</h2></div>
+                </div>
+            </div>
+        </div>
+        <div class="slide-serch">
+            <div class="container">
+                <div class="col-sm-11 col-xs-10">
+                    <div class="posr">
+                        <div id="slide-search" class="skip-content">
+                            <form id="slide-form" action="#" method="get">
+                                <div class="form_search">
+                                    <label for="search">Search:</label>
+                                    <input id="search-1" type="text" name="q" placeholder="بحث" value=""
+                                           class="input-text" maxlength="128" autocomplete="off">
+                                    <button type="submit" title="Search"
+                                            class="button button-search fa fa-search"></button>
+                                    <input type="submit" title="Search" class="hidden">
+                                    <div id="search_auto" class="search-autocomplete" style="display: none;"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-1 col-xs-2">
+                    <div class="browse">
+                        <a class="c-purple browse-btn" href="filter.html"><i class="fa fa-list-ul" aria-hidden="true"></i>
+                            تصفح</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Start tabs section-->
+    <section  class="tabs">
+        <div class="container">
+            <ul class="nav nav-tabs row">
+                <li class="active col-xs-6"><a class="color-333" data-toggle="tab" href="#top_rate">الأعلى تقييماً</a></li>
+                <li class=" col-xs-6"><a class="color-333" data-toggle="tab" href="#down_rate">الأدنى تقييماً</a></li>
+            </ul>
+
+            <div id="red-more-1" class="tab-content">
+                <div id="top_rate" class="tab-pane fade in active ">
+                    <div class="pt-15 pb-15 start-rate-row">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="media face-media">
+                            <div class="media-body">
+                                <h4 class="media-heading">1</h4>
+                            </div>
+                            <div class="media-right">
+                                <img src="images/face1.png" class="media-object img-responsive" style="min-width:60px">
+                                <div class="text-center p-5">
+                                    <h4>ممتاز</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="rate-content">
+                            <div class="img-content">
+                            <img class="img-responsive" src="images/img1.png " >
+                            </div>
+                            <div class="left-img-content">
+                                <div class="content-title">
+                                <h4>الأكاديمية الأندلسية العربية الثانوية للبنين</h4>
+                                </div>
+                                <div class="content-location">
+                                    <div class="location-img">
+                                        <img class="img-responsive" src="images/bulding1.png">
+                                    </div>
+                                    <div class="location-title">
+                                        <h5>عمان</h5>
+                                    </div>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="tag">
+                                    <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                </div>
+                                <div class="tag">
+                                    <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="comt-rate-box uk-display-inline-block">
+                            <div class="social">
+                                <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                        <div class="uk-display-inline-block rate-box">
+                            <a href="schoolPage.html">
+                                <div class="inner-box">
+                                    <span><img src="images/happy-small-white-face.png"></span>
+                                    <span><img src="images/angry-white-face.png"></span>
+                                    <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">2</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face2.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد جداً</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img2.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية ساندس الوطنية المختلطة الثانية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">حكومة</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                    <div class="inner-box">
+                                        <span><img src="images/happy-small-white-face.png"></span>
+                                        <span><img src="images/angry-white-face.png"></span>
+                                        <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                    </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">3</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">3</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">3</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">3</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="down_rate" class="tab-pane fade">
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">1</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">2</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">3</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">4</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face3.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img3.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية الرواد الدولية الثانوية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+                                        </div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">5</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face2.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد جداً</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img2.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية ساندس الوطنية المختلطة الثانية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">حكومة</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-15 pb-15 start-rate-row">
+                        <div class="row">
+                            <div class="col-sm-2">
+                                <div class="media face-media">
+                                    <div class="media-body">
+                                        <h4 class="media-heading">6</h4>
+                                    </div>
+                                    <div class="media-right">
+                                        <img src="images/face2.png" class="media-object img-responsive" style="min-width:60px">
+                                        <div class="text-center p-5">
+                                            <h4>جيد جداً</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="rate-content">
+                                    <div class="img-content">
+                                        <img class="img-responsive" src="images/img2.png " >
+                                    </div>
+                                    <div class="left-img-content">
+                                        <div class="content-title">
+                                            <h4>أكاديمية ساندس الوطنية المختلطة الثانية</h4>
+                                        </div>
+                                        <div class="content-location">
+                                            <div class="location-img">
+                                                <img class="img-responsive" src="images/bulding1.png">
+                                            </div>
+                                            <div class="location-title">
+                                                <h5>جرش</h5>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="tag">
+                                            <span class="tag-img"><img  src="images/tag.png"> </span><span class="tag-content"><p class="uk-display-inline">حكومة</p></span>
+                                        </div>
+                                    </div>
+                                    <div class="clearfix"></div>
+
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="comt-rate-box uk-display-inline-block">
+                                    <div class="social">
+                                        <a href="#" class="comt"><span class="comt-num"> 2540 </span> <span class="comt-img"><img src="images/comment.png"></span></a>
+                                        <a href="#" target="_blank" class="fb-icon"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                        <a href="#" target="_blank" class="tw-icon"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                    </div>
+                                </div>
+                                <div class="uk-display-inline-block rate-box">
+                                    <a href="schoolPage.html">
+                                        <div class="inner-box">
+                                            <span><img src="images/happy-small-white-face.png"></span>
+                                            <span><img src="images/angry-white-face.png"></span>
+                                            <p class="add-rate-text uk-display-inline">اضف تقييمك</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End tabs section-->
+    <!--Start add-school section-->
+    <section class="add-school">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <a class="add-school-btn" href="#">
+                        <span uk-icon="icon: plus"></span> <p class="uk-display-inline">اضف مدرسة</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+            <div class="ads">
+                <div class="container">
+            <div class="row">
+                <div class="col-xs-12 ">
+                    <img class="img-responsive" src="images/AREA.png">
+                </div>
+            </div>
+            </div>
+            </div>
+
+    </section>
+    <!--End add-school section-->
+    <section class="info">
+        <div class="container">
+            <div class="row pt-30">
+                <div class="col-md-12 text-center">
+                    <h3 class="color-fff">كيف يعمل نظام التقييم</h3>
+                </div>
+            </div>
+            <div class="row pt-20">
+                <div class="col-md-12 hidden-xs hidden-sm margin-auto">
+                    <img class="img-responsive margin-auto" src="images/img/ps.png">
+                </div>
+                <div class="col-md-12 hidden-xs hidden-md hidden-lg  margin-auto">
+                    <img class="img-responsive margin-auto" src="images/img/TAB.png">
+                </div>
+                <div class="col-md-12 hidden-sm hidden-md hidden-lg  margin-auto">
+                    <img class="img-responsive margin-auto" src="images/img/mo.png">
+                </div>
+            </div>
+        </div>
+    </section>
+
+<footer>
+	
+		<div class="footer-top">
+		<div class="container">
+		<div class="row">
+			
+			<div class="col-md-5">
+				<div class="featuredPost">
+					
+				<h3 class="text-center"> مشاركة مميزة</h3>
+				<img class="pull-right" src="images/cotashen1.png" width="26"><br>
+				<p>
+				لوريم إيبسوم هو ببساطة نص شكلي  بمعنى أن الغاية هي الشكل وليس المحتوى ويُستخدم في صناعات المطابع ودور النشر
+				</p>
+				<img class="pull-left" src="images/cotashen2.png" width="26">				
+				<div class="clearfix"></div>	
+				
+				<ul class="list-inline text-left featuredPostShare">
+					
+					<li><a href="#"> <span>12</span> <i class="fa fa-thumbs-o-down"></i> </a></li>
+					<li><a href="#"> <span>12</span> <i class="fa fa-thumbs-o-up"></i> </a></li>
+					<li><a href="#"> <i class="fa fa-facebook"></i> </a></li>
+					<li><a href="#"> <i class="fa fa-twitter"></i> </a></li>
+					</ul>	
+				
+					
+				</div>
+			</div>
+			<div class="col-md-1"></div>
+			<div class="col-md-6">
+			
+				<h3 class="text-center">التصنيفات</h3>
+				<div class="footer-top-tag">
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">حكومية</p></span>
+				</div>	
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">خاصة</p></span>
+				</div>	
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">وكالة غوث</p></span>
+				</div>	
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">خاصة نظام IGCSE</p></span>
+				</div>				
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">خاصة نظام محلي</p></span>
+				</div>				
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">خاصة نظام IB</p></span>
+				</div>				
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">مراكز صعوبة التعلم</p></span>
+				</div>				
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">مختلط صفوف اولى</p></span>
+				</div>				
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">اساسي</p></span>
+				</div>		
+					
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">خاصة نظام SAT</p></span>
+				</div>	
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">ثانوي</p></span>
+				</div>				
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">ذكور</p></span>
+				</div>			
+				<div class="tag">
+					<span class="tag-img"><img src="images/tag.png"> </span>
+					<span class="tag-content"><p class="uk-display-inline">اناث</p></span>
+				</div>
+				</div>
+				
+			</div>
+		
+		</div>
+		</div>
+		</div>
+	<div class="footer-bottom">
+	<div class="container">
+	<div class="row">
+		
+		<div class="col-md-4 text-center">
+		<img src="images/logo-png.png" width="200">
+		<h2>اول موقع اردني لتقييم المدارس</h2>
+		<p>جميع الحقوق محفوظة © 2017 </p>
+		<span>تابعنا</span>
+		<a href="#"><i class="fa fa-facebook fa-2x"></i></a>
+		<a href="#"><i class="fa fa-twitter fa-2x"></i></a>
+		
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-sm-4 col-md-2">
+			
+
+
+
+			<h3>من نحن</h3>
+			<ul class="list-unstyled">
+			<li><a href="#">عن الموقع</a></li>
+			<li><a href="#">اعلن معنا</a></li>
+			<li><a href="#">اتصل بنا</a></li>
+			</ul>
+			
+		</div>
+		<div class="col-sm-4 col-md-2">
+			
+			<h3>الارشادات القانونية </h3>
+			<ul class="list-unstyled">
+			<li><a href="#">سياسة الخصوصية </a></li>
+			<li><a href="#">شروط الخدمة </a></li>
+			<li><a href="#">سياسة المحتوى </a></li>
+			</ul>
+			
+
+
+
+		</div>
+		<div class="col-sm-4 col-md-2">
+			
+			<h3>الدعم الفني </h3>
+			<ul class="list-unstyled">
+			<li><a href="#">أسئلة متكررة</a></li>			
+				<li><a href="#">شروط الخدمة</a></li>			
+				<li><a href="#">كيف تشارك</a></li>
+			</ul>
+			
+		</div>
+		</div>	
+	</div>
+	</div>
+	
+</footer>
+    <!--uk-offcanvas-content-->
+</div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/readmore.min.js"></script>
+    <script src="js/uikit.min.js"></script>
+    <script src="js/uikit-icons.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
